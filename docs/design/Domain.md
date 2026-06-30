@@ -37,3 +37,28 @@ Support Request
 Return Request
 
 Notification
+
+
+
+
+
+Customer
+    │
+    ├── Places ─────────────► Order
+    │                           │
+    │                           ├── Contains ─────► Order Item
+    │                           │                      │
+    │                           │                      ▼
+    │                           │               Product Variant
+    │                           │                      │
+    │                           │                      ▼
+    │                           │                 Product
+    │                           │
+    │                           └── Receives ───► Payment
+    │
+    ├── Expresses ───────────► Interest
+    │                              │
+    │                              ▼
+    │                         Product
+    │
+    └── Creates ─────────────► Support Request
